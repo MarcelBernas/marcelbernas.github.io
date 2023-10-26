@@ -5,8 +5,77 @@
 			<meta charset="utf-8">
 			<title>Formularz</title>
 		</head>
-		<body>
-			Tutaj będzie formularz
+		<body bgcolor="#17634">
+			<font face="Verdana" color="White">
+			<FORM enctype="text/plain" action="mailto:marcelbernas59@gmail.com?subject=list_do_nauczyciela" method="Post">
+				<h1>Formularz - ankieta dla uczniów</h1>
+				<p>Który przedmiot szkolny lubisz najbardziej? Dlaczego?</p>
+					<TEXTAREA Name="Pytanie1" value=""></TEXTAREA>
+				<p>Czy Twoja średnia ocen z jakiegokolwiek przedmiotu jest niższa niż 2.0?</p>
+					<BUTTON name="Pytanie2" value="Tak">TAK</BUTTON> <BUTTON name="Pytanie2" value="Nie">NIE</BUTTON>
+				<p> Jeśli w poprzednim pytaniu zaznaczyłeś/aś "TAK", to z których przedmiotów masz średnią niższą niż 2.0?</p>
+					<input name="pytanie3" value="polski" type="checkbox">J. polski</input><input value="matematyka" type="checkbox">Matematyka</input><input value="angielski" type="checkbox">J. angielski</input><input type="checkbox" value="fizyka">Fizyka</input><input type="checkbox" value="inny" checked>Inny</input>
+				<p>Jeśli inny, to jaki? (maks. 100 znaków)</p>
+					<input name="pytanie4" type="text" value="" maxlength="100"></input type="text">
+				<p>Do której klasy chodzisz?</p>
+				<select name="pytanie5">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<p>Czy lubisz sport?</p>
+				<input type="radio" name="pytanie6" value="Tak" checked>Tak</input><input type="radio" name="pytanie6" value="Tak">Raczej tak</input><input type="radio" name="pytanie6" value="Raczej nie">Raczej nie</input><input type="radio" name="pytanie6" value="Nie">Nie</input>
+				<p>Czy podoba ci się szkoła, do której chodzisz?</p>
+				<select name="pytanie6">
+					<option value="Tak" checked>Tak</option>
+					<option value="Nie">Nie</option>
+					<option value="Nie-wiem">Nie wiem</option>
+				</select>
+				<table width="100%" border=0>
+					<tbody>
+						<tr>
+							<th valign="top" align="left" width="50%"><p>Czy chodzisz na basen?<br>
+								<input type="radio" name="pytanie7" value="Tak">Tak</input>
+								<input type="radio" name="pytanie7" value="Nie">Nie</input>
+								<input type="radio" name="pytanie7" value="-">Wolę nie odpowiadać</input></th></p>
+							<th valign="top" align="left" width="50%"><p>Co zawsze przynosisz do szkoły?<br>
+								<input type="checkbox" name="pytanie8" value="dlugopis">Długopis</input><br>
+								<input type="checkbox" name="pytanie8" value="olowek">Ołówek</input><br>
+								<input type="checkbox" name="pytanie8" value="p. do geometrii">Przybory do geometrii</input>></th><br></p>
+						</tr>
+						<tr>
+							<th><p valign="top" align="left">Czy często chorujesz?<br>
+								<select name="pytanie9">
+									<option value="Z. tak">Zdecydowanie tak</option>
+									<option value="R. tak">Raczej tak</option>
+									<option value="R. nie">Raczej nie</option>
+									<option value="Z. nie">Zdecydowanie nie</option>
+								</select></p>
+							<th><p valign="top" align="left">Jaką średnią swoich ocen przewidujesz na koniec tego semestru?<br>
+								<input name="pytanie10" value="1" type="radio">1</input>
+								<input name="pytanie10" value="2" type="radio">2</input>
+								<input name="pytanie10" value="3" type="radio">3</input>
+								<input name="pytanie10" value="4" type="radio" checked>4</input>
+								<input name="pytanie10" value="5" type="radio">5 lub 6</input></p>
+						</tr>
+						</tbody>
+				</table>
+				<p>Dane ucznia:</p>
+				<p>Imię:</p>
+					<input name="imie" value="Podaj Imię..." type="text"></input type="text">
+				<p>Nazwisko:</p>
+					<input name="nazwisko" value="Podaj nazwisko..." type="text"></input type="text">
+				<p>Utwórz hasło:</p>
+					<input name="haslo" type="password"></input type="text">
+				<br>
+				<p align="center">
+				<input type="reset" value="CZYŚĆ"></input>
+				<input type="submit" value="WYŚLIJ"></input>
+				</p>
+			</FORM>
 			<A HREF="index.html">Wróć</A>
+			</font>
 		</body>
 	</html>
