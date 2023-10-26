@@ -12,9 +12,14 @@
 				<p>Który przedmiot szkolny lubisz najbardziej? Dlaczego?</p>
 					<TEXTAREA Name="pytanie1" value=""></TEXTAREA>
 				<p>Czy Twoja średnia ocen z jakiegokolwiek przedmiotu jest niższa niż 2.0?</p>
-					<input type="button" name="pytanie2" value="Tak"></input> <input type="button" name="pytanie2" value="Nie"></input>
+					<button type="button" name="pytanie2" value="Tak"></button>
+					<button type="button" name="pytanie2" value="Nie"></button>
 				<p> Jeśli w poprzednim pytaniu zaznaczyłeś/aś "TAK", to z których przedmiotów masz średnią niższą niż 2.0?</p>
-					<input name="pytanie3" multiple value="polski" type="checkbox">J. polski</input><input value="matematyka" multiple type="checkbox">Matematyka</input><input value="angielski" type="checkbox" multiple>J. angielski</input><input type="checkbox" value="fizyka" multiple>Fizyka</input><input type="checkbox" value="inny" checked multiple>Inny</input>
+					<input name="pytanie3" value="polski" type="checkbox">J. polski</input>
+					<input value="matematyka" type="checkbox">Matematyka</input>
+					<input value="angielski" type="checkbox">J. angielski</input>
+					<input type="checkbox" value="fizyka">Fizyka</input>
+					<input type="checkbox" value="inny" checked>Inny</input>
 				<p>Jeśli inny, to jaki? (maks. 100 znaków)</p>
 					<input name="pytanie4" type="text" value="" maxlength="100"></input type="text">
 				<p>Do której klasy chodzisz?</p>
@@ -26,7 +31,10 @@
 					<option value="5">5</option>
 				</select>
 				<p>Czy lubisz sport?</p>
-				<input type="radio" name="pytanie6" value="Tak" checked>Tak</input><input type="radio" name="pytanie6" value="Tak">Raczej tak</input><input type="radio" name="pytanie6" value="Raczej nie">Raczej nie</input><input type="radio" name="pytanie6" value="Nie">Nie</input>
+					<input type="radio" name="pytanie6" value="Tak" checked>Tak</input>
+					<input type="radio" name="pytanie6" value="Raczej Tak">Raczej tak</input>
+					<input type="radio" name="pytanie6" value="Raczej nie">Raczej nie</input>
+					<input type="radio" name="pytanie6" value="Nie">Nie</input>
 				<p>Czy podoba ci się szkoła, do której chodzisz?</p>
 				<select name="pytanie6">
 					<option value="Tak" checked>Tak</option>
