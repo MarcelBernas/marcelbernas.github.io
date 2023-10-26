@@ -14,7 +14,7 @@
 				<p>Czy Twoja średnia ocen z jakiegokolwiek przedmiotu jest niższa niż 2.0?</p>
 					<BUTTON name="pytanie2" value="Tak" >TAK</BUTTON> <BUTTON name="pytanie2" value="Nie">NIE</BUTTON>
 				<p> Jeśli w poprzednim pytaniu zaznaczyłeś/aś "TAK", to z których przedmiotów masz średnią niższą niż 2.0?</p>
-					<input name="pytanie3" value="polski" type="checkbox">J. polski</input><input value="matematyka" type="checkbox">Matematyka</input><input value="angielski" type="checkbox">J. angielski</input><input type="checkbox" value="fizyka">Fizyka</input><input type="checkbox" value="inny" checked>Inny</input>
+					<input name="pytanie3" multiple value="polski" type="checkbox">J. polski</input><input value="matematyka" multiple type="checkbox">Matematyka</input><input value="angielski" type="checkbox" multiple>J. angielski</input><input type="checkbox" value="fizyka" multiple>Fizyka</input><input type="checkbox" value="inny" checked multiple>Inny</input>
 				<p>Jeśli inny, to jaki? (maks. 100 znaków)</p>
 					<input name="pytanie4" type="text" value="" maxlength="100"></input type="text">
 				<p>Do której klasy chodzisz?</p>
@@ -41,9 +41,9 @@
 								<input type="radio" name="pytanie7" value="Nie">Nie</input>
 								<input type="radio" name="pytanie7" value="-">Wolę nie odpowiadać</input></th></p>
 							<th valign="top" align="left" width="50%"><p>Co zawsze przynosisz do szkoły?<br>
-								<input type="checkbox" name="pytanie8" value="dlugopis">Długopis</input><br>
-								<input type="checkbox" name="pytanie8" value="olowek">Ołówek</input><br>
-								<input type="checkbox" name="pytanie8" value="p. do geometrii">Przybory do geometrii</input></th><br></p>
+								<input type="checkbox" name="pytanie8" value="dlugopis" multiple>Długopis</input><br>
+								<input type="checkbox" name="pytanie8" value="olowek" multiple>Ołówek</input><br>
+								<input type="checkbox" name="pytanie8" value="p. do geometrii" multiple>Przybory do geometrii</input></th><br></p>
 						</tr>
 						<tr>
 							<th><p valign="top" align="left">Czy często chorujesz?<br>
