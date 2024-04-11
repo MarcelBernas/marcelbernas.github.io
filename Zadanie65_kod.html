@@ -1,0 +1,116 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h4>HTML</h4>
+		<textarea rows="20" cols="120">
+<html>
+
+<head>
+    <style>
+        @import url(zadanie65_bern.css);
+    </style>
+</head>
+<body>
+    <div id="pierwszy_bernas">
+        <p>
+            Pierwszy akapit/pierwszy DIV -> Bernaś<br>
+            nazwa ID akapitu = "pierwszy_bernas"
+        </p>
+        <p>
+            Drugi akapit/pierwszy DIV<br>
+            pierwszy akapit -> p:first-child {font-size: 9mm; font-style: italic;}, bo numer parzysty w dzienniku<br>
+            pozostałe akipity -> p{font-size:10pt;}, bo numer parzysty w dzienniku<br>
+            szerokość bloku -> 700+2*4 = 708px<br>
+            pierwszy div -> różowy<br>
+        </p>
+        <p>
+            Trzeci akapit/pierwszy DIV<br>
+            pierwszy div -> obramowanie fioletowe DIV<br>
+            pierwszy div -> obramowanie grubość 7px, ciągłe (solid)<br>
+            pierwszy div -> r1 = 7 + 6 = 13mm<br>
+        </p>
+    </div>
+    <br>
+    <div id="drugi_bernas">
+        <p>
+            Pierwszy akapit/drugi DIV -> Bernaś<br>
+            nazwa ID akapitu = "drugi_bernas"
+        </p>
+        <p>
+            Drugi akapit/drugi DIV<br>
+            szerokość bloku -> 900+2*4 = 908px<br>
+            drugi div -> jasnozielony<br>
+        </p>
+        <p>
+            Trzeci akapit/drugi DIV<br>
+            pierwszy div -> obramowanie czarne DIV<br>
+            pierwszy div -> obramowanie grubość 3px, ciągłe (solid)<br>
+            pierwszy div -> r2 = 7 + 6 = 13mm<br>
+        </p>
+    </div>
+    <br>
+    <div id="trzeci_bernas">
+        <p>
+            Pierwszy akapit/trzeci DIV -> Bernaś<br>
+            nazwa ID akapitu = "drugi_bernas"
+        </p>
+        <p>
+            Drugi akapit/trzeci DIV<br>
+            szerokość bloku -> 1100+2*4 = 1108px<br>
+            drugi div -> jasnoniebieski<br>
+        </p>
+        <p>
+            Trzeci akapit/trzeci DIV<br>
+            pierwszy div -> obramowanie granatowe DIV<br>
+            pierwszy div -> obramowanie grubość 5px, ciągłe (solid)<br>
+            pierwszy div -> r3 = 7 + 8 = 15mm<br>
+        </p>
+    </div>
+    
+</body>
+
+</html>
+		</textarea>
+        <h4>CSS</h4>
+        <textarea rows="20" cols="120">
+body {
+    background-color: rgb(192, 192, 192);
+}
+
+p {
+    font-size: 10pt;
+    padding-left: 20px;
+}
+
+p:first-child {
+    font-size: 9mm;
+    font-style: italic;
+}
+
+div#pierwszy_bernas {
+    width: 708px;
+    background-color: rgb(255, 192, 203);
+    border-radius: 13mm;
+    border: 7px solid rgb(128, 0, 128); 
+}
+
+div#drugi_bernas {
+    width: 908px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(144, 238, 144);
+    border-radius: 13mm;
+    border: 3px solid rgb(0, 0, 0); 
+}
+
+div#trzeci_bernas {
+    width: 1108px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(135, 206, 250);
+    border-radius: 15mm;
+    border: 5px solid rgb(0, 0, 139); 
+}
+        </textarea>

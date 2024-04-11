@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(192, 192, 192);
+}
+
+p {
+    font-size: 10pt;
+    padding-left: 20px;
+}
+
+p:first-child {
+    font-size: 9mm;
+    font-style: italic;
+}
+
+div#pierwszy_bernas {
+    width: 708px;
+    background-color: rgb(255, 192, 203);
+    border-radius: 13mm;
+    border: 7px solid rgb(128, 0, 128); 
+}
+
+div#drugi_bernas {
+    width: 908px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(144, 238, 144);
+    border-radius: 13mm;
+    border: 3px solid rgb(0, 0, 0); 
+}
+
+div#trzeci_bernas {
+    width: 1108px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(135, 206, 250);
+    border-radius: 15mm;
+    border: 5px solid rgb(0, 0, 139); 
+}

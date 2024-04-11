@@ -1,0 +1,25 @@
+div{
+    width:602px;
+    background-color: #00ff00;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 10mm;
+}
+#blok1_bernas:hover{
+    background-color:blue;
+    font-size: 20mm;
+}
+#blok2_bernas:hover{
+    background-color:yellow;
+    font-size: 20mm;
+}
+#blok3_bernas:hover{
+    background-color:gold;
+    font-size: 20mm;
+}
+div#tekst{
+    text-align: center;
+    width: 95%;
+    background-color: #ffffff;
+}
