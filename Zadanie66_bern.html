@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p#firstline:first-line
+                {
+                    color:red;
+                    font-size:20pt;
+                    font-weight:bold;
+                }
+
+            p#firstletter:first-letter
+                {
+                    color:red;
+                    font-size:100pt;
+                }
+
+            p#beforeafter:before
+                {
+                    content:"TO SĄ ĆWICZENIA";
+                    font-size:15pt;
+                    font-style:italic;
+                    font-weight:bold;
+                }
+
+             p#beforeafter:after
+                {
+                    content:"AUTOR Król Lew";
+                    font-size:15pt;
+                    font-style:italic;
+                    font-weight:bold;
+                }
+
+            td{
+                border: 4px solid black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="firstline">Pseudoelement :first-line obejmuje formatowaniem <br>całą pierwszą linię.</p>
+        <table>
+            <tr>
+                <td>
+                    p:first-line
+                    {
+                    color:red;
+                    font-size:20pt;
+                    font-weight:bold;
+                    }
+                </td>
+            </tr>
+        </table>
+
+        <p id="firstletter">Pseudoelement :first-letter pozwala na formatowanie pierwszej litery w bloku
+        tekstu.</p>
+        <table>
+            <tr>
+                <td>
+                    p:first-letter
+                    {
+                    color:red;
+                    font-size:100pt;
+                    }
+                </td>
+            </tr>
+        </table>
+
+        <p id="beforeafter">Pseudoelementy: :after oraz :before.
+        Poza :first-letter oraz :first-line w specyfikacji umieszczono jeszcze dwa inne
+        pseudoelementy: :after oraz :before. Oba elementy służą do umieszczania tekstu przed i za
+        formatowanym elementem strony.</p>
+        <table>
+            <tr>
+                <td>
+                    p:before
+                    {
+                    content:"TO SĄ ĆWICZENIA";
+                    font-size:15pt;
+                    font-style:italic;
+                    font-weight:bold;
+                    }
+
+                    p:after
+                    {
+                    content:"AUTOR Król Lew";
+                    font-size:15pt;
+                    font-style:italic;
+                    font-weight:bold;
+                    }
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
