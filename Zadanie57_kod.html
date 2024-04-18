@@ -1,0 +1,67 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h4>HTML</h4>
+		<textarea rows="20" cols="120">
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url(zadanie57_bern.css);
+        </style>
+    </head>
+    <body>
+        <p>
+            <u>Akapit 1</u> Bernaś klasa 1P grupa 1
+            Użyłem * gwiazdka dla selektora uniwersalnego,
+            Parametry dla selektora uniwersalnego:
+            wielkość 30+liczba_liter_imienia w [pt] = 30+6 (Marcel)=36 [pt] ,
+            mam numer w dzienniku 2 a więc parzysty, czyli kolor tła żółty i kolor liter niebieski.
+        </p>
+        <p class="klasa_nieuniwersalna_bernas">
+            <u>Akapit 2</u>, Bernaś klasa 1P grupa 1
+            Użyłem p. klasa_nieuniwersalna_bernas,
+            Parametry dla klasy nieuniwersalnej:
+            wielkość 25+liczba_liter_nazwiska w [pt] = 25+6 (Bernaś) = 31 [pt] ,
+            kolor liter fioletowy (dla numerów parzystych w dzienniku).
+        </p>
+        <h1 class="klasa_uniwersalna_bernas">
+            <u>Akapit 3</u>, Bernaś klasa 1P grupa 1
+            Użyłem p. klasa_uniwersalna_bernas,
+            Parametry dla klasy uniwersalnej:
+            wielkość 20 + miesiąc urodzenia w [pt] = 20+8 (sierpień) = 28 [pt] ,
+            kolor liter czarny (dla numerów parzystych w dzienniku).
+        </h1>
+        <div class="klasa_uniwersalna_bernas">
+            <u>Akapit 4</u>, Bernaś klasa 1P grupa 1
+            Użyłem p. klasa_uniwersalna_bernas,
+            Parametry dla klasy uniwersalnej:
+            wielkość 20 + miesiąc urodzenia w [pt] = 20+8 (sierpień) = 28 [pt] ,
+            kolor liter czarny (dla numerów parzystych w dzienniku).
+        </div>
+    </body>
+</html>
+		</textarea>
+        <h4>CSS</h4>
+        <textarea rows="20" cols="120">
+*
+{
+    font-size: 36pt;
+    color:blue;
+    background-color: yellow;
+}
+
+p.klasa_nieuniwersalna_bernas
+{
+    font-size: 31pt;
+    color: purple;
+}
+
+.klasa_uniwersalna_bernas
+{
+    font-size: 28pt;
+    color: black;
+}
+        </textarea>

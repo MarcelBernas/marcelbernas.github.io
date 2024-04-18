@@ -1,0 +1,18 @@
+*
+{
+    font-size: 36pt;
+    color:blue;
+    background-color: yellow;
+}
+
+p.klasa_nieuniwersalna_bernas
+{
+    font-size: 31pt;
+    color: purple;
+}
+
+.klasa_uniwersalna_bernas
+{
+    font-size: 28pt;
+    color: black;
+}
