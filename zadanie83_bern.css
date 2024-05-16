@@ -1,0 +1,7 @@
+div
+{   width: 1000px;
+    margin-left: auto; /* wyśrodkowanie */
+    margin-right: auto; 
+    text-justify: inter-word;
+    background-color: aqua;
+}

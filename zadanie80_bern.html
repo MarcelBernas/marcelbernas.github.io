@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                border-collapse:collapse;
+            }
+
+            table,td{
+                text-align: left;
+                border:2px solid black;
+                padding: 2px;
+                font-size:20px;
+            }
+            h1{
+                text-align: center;
+                font-size: 30pt;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td rowspan="2">
+                    Pozycjonowanie
+                </td>
+                <td>
+                    Pozycjonowanie pozwala zdefiniować położenie elementów na stronie internetowej.
+                    Elementy można rozmieszczać nie tylko względem brzegów strony, ale również względem jej
+                    poszczególnych elementów.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Do pozycjonowania służy atrybut position.
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <h1>1</h1>
+                </td>
+                <td>
+                    Pozycjonowanie relatywne
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można przesunąć wybrany element w stosunku do naturalnego
+                    pozycjonowania elementów. Można łączyć kierunki, czyli jednocześnie ustawić odległość od na przykład lewej i górnej krawędzi.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: relative; kierunek: wielkość;}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: relative; left: 10px; top: 10px;}
+                </td>
+            </tr>
+             <tr>
+                <td rowspan="4">
+                    <h1>2</h1>
+                </td>
+                <td>
+                    Pozycjonowanie absolutne
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można przesunąć wybrany element w stosunku do wybranych
+                    krawędzi strony lub też nadrzędnego elementu tworzącego blok. Będzie to niezależne od
+                    innych elementów, a także od miejsca wpisania reguły w dokumencie.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: absolute; kierunek: wielkość;}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: absolute; left: 10px; top: 10px;}
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <h1>3</h1>
+                </td>
+                <td>
+                    Pozycjonowanie ustalone
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można ustawić na stałe wybrany element w stosunku do krawędzi
+                    okna. Można łączyć kierunki, czyli jednocześnie ustawić odległość od na przykład lewej i
+                    górnej krawędzi.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: fixed; kierunek: wielkość;}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: fixed; left: 10px; top: 10px;}
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    <h1>4</h1>
+                </td>
+                <td>
+                    Pozycjonowanie statyczne
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można przywrócić naturalne pozycjonowanie elementów oparte na
+                    kolejności występowania w dokumencie HTML. Podanie jakiejkolwiek odległości nie ma
+                    żadnego wpływu na pozycję elementu.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: static;}
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    <h1>5</h1>
+                </td>
+                <td>
+                    Kolejność nakładania (warstwy nakładające się)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można ustalić kolejność nakładania się elementów. W normalnym
+                    stanie elementy nakładają się w kolejności wpisywania do dokumentu HTML. Można to
+                    zmienić wstawiając własną kolejność.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: rodzaj; kierunek: wielkość; z-index: kolejność;}
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <h1>6</h1>
+                </td>
+                <td>
+                    Przycinanie elementu
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można przyciąć element z czterech stron: od góry, prawej strony, od
+                    dołu i od lewej strony. Możliwe jest to tylko przy position: absolute;. Przycięty fragment
+                    może być tylko prostokątem.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: absolute; clip: rect(wartości określają rogi prostokąta: górny-prawy i
+                    dolny-lewy.);}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {position: absolute; clip: rect(10px 100px 10px 10px);}
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <h1>7</h1>
+                </td>
+                <td>
+                    Ułożenie w pionie
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można ustalić pionowe wyrównanie elementów względem siebie.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {vertical-align: sposób;}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {vertical-align: top;}
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <h1>8</h1>
+                </td>
+                <td>
+                    Ułożenie w poziomie
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można ustalić poziome wyrównanie elementu w stosunku do
+                    elementów sąsiadujących. Polecenie nie działa przy pozycjonowaniu absolutnym: position:
+                    absolute;.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {float: kierunek;}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {float: left;}
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <h1>9</h1>
+                </td>
+                <td>
+                    Przyleganie elementów
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można ustalić położenie elementu następującego po elemencie
+                    pływającym poprzedzającym. Polecenie definiuje, która krawędź nie będzie przylegać.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {clear: miejsce;}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {clear: both;}
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <h1>10</h1>
+                </td>
+                <td>
+                    Sposób wyświetlania
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można nadać określony sposób wyświetlania, inny niż naturalny. Na
+                    przykład element wyświetlany w linii, może być wyświetlany w bloku i na odwrót.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {display: sposób;}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {display: block;}
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <h1>11</h1>
+                </td>
+                <td>
+                    Widoczność elementu
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dzięki temu poleceniu można ukryć określony element, aby nie był wyświetlany w
+                    przeglądarce. W jego miejscu pojawia się puste pudełko.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {visibility: stan;}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    selektor {visibility: hidden;}
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

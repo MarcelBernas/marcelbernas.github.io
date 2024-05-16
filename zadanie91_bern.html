@@ -1,0 +1,116 @@
+<!-- okreslenie typu HTML dla walidatora -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- xmlns okresla przestrzeń nazw dla xml -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+
+<head>
+    <title>styl wewnetrzny body</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- styl wewnetrzny -->
+    <style type="text/css">
+        /* zerowanie wszystkich marginesów i przestrzeni*/
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* definicja div*/
+        /* overflow: hidden - -> ukrycie nadmiarowości czyli gdy elementy div są za duże*/
+        div {
+            overflow: hidden;
+        }
+
+        /* definicja ramki-główny element*/
+        /* margin-right: auto;-wartość domyślna */
+        #ramka {
+            background-color: #C93;
+            width: 1100px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        /* definicja nagłówka*/
+        #naglowek {
+            width: 100%;
+            color: green;
+            text-align: center;
+            font-size: 1cm;
+            background-color: #e5e000;
+        }
+
+        /* definicja stopki*/
+        #stopka {
+            width: 100%;
+            background-color: #888800;
+        }
+
+        /* definicja klasy kolumny */
+        .kolumny {
+            width: 29%;
+            margin-top: 10px;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            margin-left: 10px;
+            padding: 5px;
+        }
+
+        /* definicje trzech kolumn */
+        /* float :left; to aby elementy były obok siebie */
+
+        #kolumna_pierwsza {
+            float: left;
+            background-color: #449900;
+        }
+
+        #kolumna_druga {
+            float: left;
+            background-color: #0077bb;
+        }
+
+        #kolumna_trzecia {
+            background-color: brown;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ramka">
+        <div id="naglowek">Bernaś Marcel, 1P</div>
+        <div class="kolumny" id="kolumna_pierwsza">
+            <p> Technologie wykonywania szablonu strony:</p>
+            <li>w oparciu o tabele</li>
+            <li>w oparciu o iframe</li>
+            <li>w oparciu o DIVy</li>
+            <li>w oparciu o instrukcje HTML5</li>
+        </div>
+        <div class="kolumny" id="kolumna_druga">
+            overflow: hidden; -> ukrycie nadmiarowości<br />
+            float:left; -> aby elementy były obok siebie<br />
+            margin-top:10px; -> margines<br />
+            margin-right:2%; -> margines<br />
+            margin-bottom:2%; -> margines<br />
+            margin-left:10px -> margines<br />
+        </div>
+        <div class="kolumny" id="kolumna_trzecia">
+            <p>nowe instrukcje HTML5</p>
+            <li>SECTION</li>
+            <li>ARTICLE</li>
+            <li>ASIDE</li>
+            <li>HEADER</li>
+            <li>FOOTER</li>
+            <li>NAV</li>
+        </div>
+        <div id="stopka">
+            <p> Technologie wykonywania szablonu strony:</p>
+            <li>w oparciu o tabele</li>
+            <li>w oparciu o iframe</li>
+            <li>w oparciu o DIVy</li>
+            <li>w oparciu o instrukcje HTML5</li>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--Marcel Bernaś, 1P-->
