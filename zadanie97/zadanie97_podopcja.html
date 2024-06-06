@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <p id="p">podopcja: -</p>
+    <script type="text/javascript">
+        let params = new URLSearchParams(document.location.search);
+        document.getElementById("p").innerHTML = "podopcja: " + params.get("opcja");
+    </script>
+    <a href="file:///D:/CSS/zadanie97_bern.html">Wstecz</a>
+</body>
