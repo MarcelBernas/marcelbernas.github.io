@@ -3,6 +3,12 @@
 <head>
     <title> Marcel Bernaś 2P</title>
     <script language="JavaScript">
+        function WinOpen_z1() {
+            window.open("z1_bern.html", "okienko_z1", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+        }
+        function WinOpen_z2() {
+            window.open("z2_bern.html", "okienko_z2", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+        }
         function WinOpen_z3() {
             window.open("z3_bern.html", "okienko_z3", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
         }
@@ -36,7 +42,7 @@
             font-family: Verdana, sans-serif;
             font-size: 16px;
             font-weight: 600;
-            width: 24%;
+            width: 16%;
         }
 
         input:hover {
@@ -49,8 +55,10 @@
     <div>
         <br/>
         <h1>Szkielet zaliczeniowy JavaScript Marcel Bernaś, klasa 2P</h1>
-        <div style="margin-left:auto; margin-right:auto; width:75%;">
+        <div style="margin-left:auto; margin-right:auto; width:90%;">
             <form>
+                <input type="button" name="zadanie1" value="Zadanie 1" onclick="WinOpen_z1(' ')">&nbsp;&nbsp;
+                <input type="button" name="zadanie2" value="Zadanie 2" onclick="WinOpen_z2(' ')">&nbsp;&nbsp;
                 <input type="button" name="zadanie3" value="Zadanie 3" onclick="WinOpen_z3(' ')">&nbsp;&nbsp;
                 <input type="button" name="zadanie4" value="Zadanie 4" onclick="WinOpen_z4(' ')">&nbsp;&nbsp;
                 <input type="button" name="zadanie5" value="Zadanie 5" onclick="WinOpen_z5(' ')">&nbsp;&nbsp;
