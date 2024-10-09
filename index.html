@@ -3,36 +3,18 @@
 <head>
     <title> Marcel Bernaś 2P</title>
     <script language="JavaScript">
-<<<<<<< HEAD
-=======
-        function WinOpen_z1() {
-            window.open("z1_bern.html", "okienko_z1", "toolbar=no,directories=no,menubar=no,height=380,width=640,top=200,left=200");
-        }
-        function WinOpen_z2() {
-            window.open("z2_bern.html", "okienko_z2", "toolbar=no,directories=no,menubar=no,height=380,width=640,top=200,left=200");
-        }
-        function WinOpen_z3() {
-            window.open("z3_bern.html", "okienko_z3", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
-        }
-        function WinOpen_z4() {
-            window.open("z4_bern.html", "okienko_z4", "toolbar=no,directories=no,menubar=no,height=600,width=500,top=200,left=400");
-        }
-        function WinOpen_z5() {
-            window.open("z5_bern.html", "okienko_z5", "toolbar=no,directories=no,menubar=no,height=300,width=800,top=350,left=550");
-        }
->>>>>>> f7194955cc9996d153d4c291b41c61383ed28597
         function okno_zamknij() {
             window.close()
         }
 
-        function WinOpen(zadanie,height,width) {
-            if (height == null){
-                height = "500"
-            }
-            if (width == null){
-                width = "600"
-            }
-            window.open("z" + zadanie + "_bern.html", "okienko_z"+zadanie, "toolbar=no,directories=no,menubar=no,height="+height+",width="+width+",top=350,left=550");
+        function WinOpen(zadanie) {
+            let width = screen.width * 0.5;
+            let height = screen.height * 0.5;
+            
+            let left = (screen.width / 2) - (width / 2);
+            let top = (screen.height / 2) - (height / 2);
+            
+            window.open("z" + zadanie + "_bern.html", "okienko_z" + zadanie, "toolbar=no,directories=no,menubar=no,height=" + height + ",width=" + width + ",top=" + top + ",left=" + left);
         }
     </script>
     <style>
@@ -87,9 +69,9 @@
         <br/>
         <div style="margin-left:auto; margin-right:auto; width:90%;">
             <form>
-                <input type="button" name="zadanie1" value="Zadanie 1" onclick="WinOpen('1','380','640')">&nbsp;&nbsp;
-                <input type="button" name="zadanie2" value="Zadanie 2" onclick="WinOpen('2','380','640')">&nbsp;&nbsp;
-                <input type="button" name="zadanie3" value="Zadanie 3" onclick="WinOpen('3','380','160')">&nbsp;&nbsp;
+                <input type="button" name="zadanie1" value="Zadanie 1" onclick="WinOpen('1')">&nbsp;&nbsp;
+                <input type="button" name="zadanie2" value="Zadanie 2" onclick="WinOpen('2')">&nbsp;&nbsp;
+                <input type="button" name="zadanie3" value="Zadanie 3" onclick="WinOpen('3')">&nbsp;&nbsp;
                 <input type="button" name="zadanie4" value="Zadanie 4" onclick="WinOpen('4')">&nbsp;&nbsp;
                 <input type="button" name="zadanie5" value="Zadanie 5" onclick="WinOpen('5')">&nbsp;&nbsp;
                 <input type="button" name="zadanie6" value="Zadanie 6" onclick="WinOpen('6')">&nbsp;&nbsp;
