@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ile sekund.</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="color:red;font-size:50px;">
+        <script language="JavaScript">
+            let d1 = 0
+            let d2 = 0
+            do {
+                let liczba1 = prompt("Dzień 1 =", "");
+                let liczba2 = prompt("Dzień 2 =", "");
+                d1 = parseInt(liczba1);
+                d2 = parseInt(liczba2);
+            }while(d2>=d1 || d1 < 1 || d1 > 31 || d2 < 1 || d2 > 31 || d1 == NaN || d2 == NaN)
+            let suma = (d1 - d2) * 86400;
+            document.write("Między "+d1+" a "+d2+" dniem miesiąca mija "+suma+" sekund.");
+        </script>
+    </div>
+</body>
+
+</html>

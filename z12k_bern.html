@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <textarea name="kod" cols="77" rows="32" readonly disabled>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ile sekund.</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="color:lime;font-size:32px;">
+        <script language="JavaScript">
+            let d1 = 0;
+            let d2 = 0;
+            let g1 = 0;
+            let g2 = 0;
+                let liczba1 = prompt("Dzień 1 =", "");
+                let liczba3 = prompt("Godzina 1 =", "");
+                let liczba2 = prompt("Dzień 2 =", "");
+                let liczba4 = prompt("Godzina 2 =", "");
+                d1 = parseInt(liczba1);
+                d2 = parseInt(liczba2);
+                g1 = parseInt(liczba3);
+                g2 = parseInt(liczba4);
+            let suma = Math.abs((d1-d2) * 86400 - (g1-g2) * 3600); 
+            document.write("Między godziną "+g1+":00 "+d1+" dnia miesiąca a godziną "+g2+":00 "+d2+" dnia miesiąca mija "+suma+" sekund.");
+        </script>
+    </div>
+</body>
+
+</html>
+        </textarea>
+    </body>
+</html>
+
+
+
