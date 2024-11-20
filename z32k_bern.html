@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie28-kod</title>
+</head>
+<body>
+    <textarea cols="200" rows="100">
+<html lang="pl-PL">
+
+<head>
+    <script type="text/javascript">
+        function ciezarowka(_marka, _model, _rocznik){
+            this.marka = _marka;
+            this.model = _model;
+            this.rocznik = _rocznik;
+        }
+        ciezarowka.prototype.ciezarowka_pokaz_bernas = function() {
+            alert(this.marka + " " + this.model + " " + this.rocznik);
+        }
+        ciezarowka.prototype.ladownosc = "20t";
+        let ciezarowka1 = new ciezarowka("MAN", "TGX", "2009");
+        ciezarowka1.ciezarowka_pokaz_bernas();
+        let ciezarowka2 = new ciezarowka("Mercedes-Benz", "Actros", "2012");
+        ciezarowka2.ciezarowka_pokaz_bernas();
+        let ciezarowka3 = new ciezarowka("Iveco", "S-WAY", "2024");
+        ciezarowka3.ciezarowka_pokaz_bernas();
+       
+       
+        document.write("właściwości: rocznik, marka, model, ładowność" + "<br>");
+        document.write("dostęp do właściwości:" + "<br>");
+        // poniżej dostęp do pól
+        document.write("pierwsza ciężarówka: "+ ciezarowka1.rocznik + " " +ciezarowka1.marka + " " + ciezarowka1.model+ " " + ciezarowka1.ladownosc + "<br/>");
+        document.write("druga ciężarówka: "+ ciezarowka2.rocznik + " " +ciezarowka2.marka + " " + ciezarowka2.model+ " " + ciezarowka2.ladownosc + "<br/>");
+        document.write("trzecia ciężarówka: "+ ciezarowka3.rocznik + " " +ciezarowka3.marka + " " + ciezarowka3.model+ " " + ciezarowka3.ladownosc + "<br/>");
+    </script>
+</head>
+
+<body>
+    <br>
+    programowanie obiektowe
+</body>
+
+</html>
+    </textarea>
+</body>
+</html>

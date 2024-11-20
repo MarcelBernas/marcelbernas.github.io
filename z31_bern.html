@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        let ciezarowka = {
+            marka: 'Mercedes-Benz',
+            model: 'Actros',
+            rocznik: 2012,
+            ciezarowka_wyswietl_bernas : function () {
+                document.write(this.rocznik + ' ' + this.marka + ' ' + this.model);
+            }
+        }
+        ciezarowka.ciezarowka_wyswietl_bernas();
+        ciezarowka.ladownosc = "20t";
+        ciezarowka.ciezarowka_pokaz_bernas = function() {alert('Ładowność: '+this.ladownosc)};
+        ciezarowka.ciezarowka_pokaz_bernas()
+    </script>
+</head>
+
+<body>
+    <br>
+    Programowanie obiektowe. <br>
+    Obiekt to ciężarówka<br>
+    Pola: marka, model, rocznik<br>
+    Rocznik: 2012<br>
+    Marka: Mercedes-Benz<br>
+    Model: Actros<br>
+    metoda: ciezarowka_wyswietl_bernas()<br>
+    Nowe pole to ładowność<br>
+    Nowa metoda to ciezarowka_pokaz_bernas();<br>
+</body>
+
+</html>
